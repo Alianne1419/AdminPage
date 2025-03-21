@@ -1,0 +1,46 @@
+
+
+.add-members-content {
+    padding: 20px;
+}
+
+.add-members-content h2 {
+    margin-bottom: 20px;
+}
+
+.add-members-content form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.add-members-content label {
+    margin-top: 10px;
+}
+
+.add-members-content input,
+.add-members-content select {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-members-content button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-members-content button:hover {
+    background-color: #3e8e41;
+}
+
+.sidebar-logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+}

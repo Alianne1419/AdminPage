@@ -24,7 +24,7 @@
 }
 
 .sidebar .logo {
-  height: 60px;
+  height: 55px;
   display: flex;
   width: 100%;
   align-items: center;
@@ -247,7 +247,7 @@
 .sidebar button:focus {
     outline: none;
 }
-
+}
 .modal {
     display: none;
     position: fixed;

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Add Member</title>
+    <link rel="stylesheet" href="add_members_style.css">
     <link rel="stylesheet" href="admin_sidebar_style.css">
-    <link rel="stylesheet" href="admin_dashboard_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 <body>
@@ -25,8 +25,8 @@
         </div>
         <ul class="sub-menu">
             <li><a href="view_members.html">View Members</a></li>
-            <li><a href="add_members.html">Add Members</a></li>
-            <li><a href="edit_members.html">Edit Members</a></li>
+            <li><a href="add_members_html">Add Members</a></li>
+            <li><a href="edit_members.htnl">Edit Members</a></li>
             <li><a href="membership_types.html">Membership Types</a></li>
             <li><a href="#">Payments</a></li>
         </ul>
@@ -111,69 +111,36 @@
 
     <div class="home-section">
         <div class="home-content">
-            <i class="fas fa-bars toggle-btn"></i> <span class="text">Dashboard</span>
+            <i class="fas fa-bars toggle-btn"></i> <span class="text">Add Member</span>
             <div class="breadcrumb">
-                <a href="#">Home</a> / Dashboard
+                <a href="#"><i class="fas fa-home"></i></a> / Memberships / Add Member
             </div>
         </div>
 
-        <div class="dashboard-content">
-            <div class="cards">
-                <div class="card">
-                    <i class="fas fa-users card-icon"></i>
-                    <h3>Total Members</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-list-alt card-icon"></i>
-                    <h3>Membership Types</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-calendar-times card-icon"></i>
-                    <h3>Expiring Soon</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-dollar-sign card-icon"></i>
-                    <h3>Total Revenue</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-user-plus card-icon"></i>
-                    <h3>New Members</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-user-slash card-icon"></i>
-                    <h3>Expired Membership</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-            </div>
+        <div class="add-members-content">
+            <h2>Add New Member</h2>
+            <form id="addMemberForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <div class="recent-members">
-                <h2>Recently Joined Members</h2>
-                <div class="table-container">
-                    <table id="recent-members-table">
-                        <thead>
-                            <tr>
-                                <th>Member Name</th>
-                                <th>Join Date</th>
-                                <th>Membership Type</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td colspan="3" class="data-placeholder"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="join_date">Join Date:</label>
+                <input type="date" id="join_date" name="join_date" required>
+
+                <label for="membership_type">Membership Type:</label>
+                <select id="membership_type" name="membership_type" required>
+                    <option value="Premium">Premium (₱3,000/month)</option>
+                    <option value="Regular">Regular (₱1,000/month)</option>
+                </select>
+
+                <button type="submit">Add Member</button>
+            </form>
         </div>
     </div>
 
     <script src="admin_sidebar_jscript.js"></script>
-    <script src="admin_dashboard_script.js"></script>
+    <script src="add_members_script.js"></script>
 </body>
 </html>

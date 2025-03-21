@@ -10,7 +10,103 @@
 </head>
 <body>
     <div class="sidebar close">
-        <?php include 'sidebar.php'; ?>
+        <div class="logo">
+            <img src="wellness.png" alt="Wellness Logo" class="sidebar-logo">
+            <span class="logo-name">M3 Membership</span>
+        </div>
+        <ul class="nav-list">
+    <li>
+        <div class="icon-link">
+            <a href="#">
+                <i class="fas fa-users"></i>
+                <span class="link-name">Memberships</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+            <li><a href="view_members.html">View Members</a></li>
+            <li><a href="add_members_html">Add Members</a></li>
+            <li><a href="edit_members.htnl">Edit Members</a></li>
+            <li><a href="membership_types.html">Membership Types</a></li>
+            <li><a href="#">Payments</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="icon-link">
+            <a href="#">
+                <i class="fas fa-dumbbell"></i>
+                <span class="link-name">Fitness Management</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+            <li><a href="#">Class Schedule</a></li>
+            <li><a href="#">Instructors</a></li>
+            <li><a href="#">Training Sessions</a></li>
+            <li><a href="#">Resources Library</a></li>
+            <li><a href="#">Add Resources</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="icon-link">
+            <a href="#">
+                <i class="fas fa-comments"></i>
+                <span class="link-name">Community</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+            <li><a href="#">View Posts</a></li>
+            <li><a href="#">Manage Users</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="icon-link">
+            <a href="#">
+                <i class="fas fa-bell"></i>
+                <span class="link-name">Notifications</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+            <li><a href="#">Send Notifications</a></li>
+            <li><a href="#">Email Templates</a></li>
+            <li><a href="#">Schedule Reminders</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="icon-link">
+            <a href="#">
+                <i class="fas fa-question-circle"></i>
+                <span class="link-name">Feedback</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+            <li><a href="#">View Feedback</a></li>
+            <li><a href="#">Manage Support</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="settings.html">
+            <i class="fas fa-cog"></i>
+            <span class="link-name">Settings</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fas fa-chart-line"></i>
+            <span class="link-name">Reports</span>
+        </a>
+    </li>
+    <li>
+        <a href="#" onclick="confirmLogout()">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="link-name">Logout</span>
+        </a>
+    </li>
+</ul>
     </div>
 
     <div class="home-section">

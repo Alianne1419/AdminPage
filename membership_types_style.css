@@ -1,0 +1,66 @@
+.membership-types-content {
+    padding: 20px;
+}
+
+.membership-types-content h2 {
+    margin-bottom: 20px;
+}
+
+.membership-types-content form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.membership-types-content label {
+    margin-top: 10px;
+}
+
+.membership-types-content input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.membership-types-content button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.membership-types-content button:hover {
+    background-color: #3e8e41;
+}
+
+.membership-type-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.membership-type-item .actions button {
+    margin-left: 5px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.membership-type-item .actions button:hover {
+    background-color: #0077A3;
+}
+.sidebar-logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+

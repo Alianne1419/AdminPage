@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Settings</title>
     <link rel="stylesheet" href="admin_sidebar_style.css">
-    <link rel="stylesheet" href="admin_dashboard_style.css">
+    <link rel="stylesheet" href="settings_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 <body>
-    <div class="sidebar close">
+  <div class="sidebar close">
         <div class="logo">
             <img src="wellness.png" alt="Wellness Logo" class="sidebar-logo">
             <span class="logo-name">M3 Membership</span>
@@ -25,8 +25,8 @@
         </div>
         <ul class="sub-menu">
             <li><a href="view_members.html">View Members</a></li>
-            <li><a href="add_members.html">Add Members</a></li>
-            <li><a href="edit_members.html">Edit Members</a></li>
+            <li><a href="add_members_html">Add Members</a></li>
+            <li><a href="edit_members.htnl">Edit Members</a></li>
             <li><a href="membership_types.html">Membership Types</a></li>
             <li><a href="#">Payments</a></li>
         </ul>
@@ -111,69 +111,73 @@
 
     <div class="home-section">
         <div class="home-content">
-            <i class="fas fa-bars toggle-btn"></i> <span class="text">Dashboard</span>
+            <i class="fas fa-bars toggle-btn"></i> <span class="text">Settings</span>
             <div class="breadcrumb">
-                <a href="#">Home</a> / Dashboard
+                <a href="#"><i class="fas fa-home"></i></a> / Settings
             </div>
         </div>
 
-        <div class="dashboard-content">
-            <div class="cards">
-                <div class="card">
-                    <i class="fas fa-users card-icon"></i>
-                    <h3>Total Members</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-list-alt card-icon"></i>
-                    <h3>Membership Types</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-calendar-times card-icon"></i>
-                    <h3>Expiring Soon</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-dollar-sign card-icon"></i>
-                    <h3>Total Revenue</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-user-plus card-icon"></i>
-                    <h3>New Members</h3>
-                    <p class="data-placeholder"></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-user-slash card-icon"></i>
-                    <h3>Expired Membership</h3>
-                    <p class="data-placeholder"></p>
-                </div>
+        <div class="settings-content">
+            <h2>Settings</h2>
+
+            <div class="setting-item">
+                <label for="profilePicture">Profile Picture:</label>
+                <input type="file" id="profilePicture" accept="image/*">
             </div>
 
-            <div class="recent-members">
-                <h2>Recently Joined Members</h2>
-                <div class="table-container">
-                    <table id="recent-members-table">
-                        <thead>
-                            <tr>
-                                <th>Member Name</th>
-                                <th>Join Date</th>
-                                <th>Membership Type</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td colspan="3" class="data-placeholder"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="setting-item">
+                <label for="darkModeToggle">Dark Mode:</label>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
             </div>
+
+            <div class="setting-item">
+                <label for="fontSizeSlider">Font Size:</label>
+                <input type="range" min="12" max="20" value="16" id="fontSizeSlider">
+                <span id="fontSizeValue">16px</span>
+            </div>
+
+            <div class="setting-item">
+                <label for="languageSelect">Language:</label>
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+
+            <div class="setting-item">
+                <label for="themeColor">Theme Color:</label>
+                <input type="color" id="themeColor" value="#2196F3">
+            </div>
+
+            <div class="setting-item">
+                <label for="notificationToggle">Notifications:</label>
+                <label class="switch">
+                    <input type="checkbox" id="notificationToggle" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <button id="changePasswordButton">Change Password</button>
+            </div>
+
+            <div class="setting-item">
+                <button id="twoFactorAuthButton">Two-Factor Authentication</button>
+            </div>
+
+            <div class="setting-item">
+                <label for="privacySettings">Privacy Settings:</label>
+                <textarea id="privacySettings" placeholder="Enter your privacy settings here..."></textarea>
+            </div>
+
         </div>
     </div>
 
     <script src="admin_sidebar_jscript.js"></script>
-    <script src="admin_dashboard_script.js"></script>
+    <script src="settings_script.js"></script>
 </body>
 </html>

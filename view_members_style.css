@@ -43,3 +43,9 @@ th {
 .status-expired {
     color: red;
 }
+
+.sidebar-logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+}
