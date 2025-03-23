@@ -1,0 +1,242 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav {
+    display: flex; /* Add this line to make nav elements flex */
+    align-items: center; /* Add this line to vertically align nav items */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.profile-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px; /* Add margin to separate from other nav items */
+}
+
+.profile-icon img {
+    height: 30px;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.profile-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 0.9em;
+}
+
+.profile-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ... (rest of your CSS) ... */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('gym_background.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Ensure better readability */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em; /* Adjust font size for better mobile readability */
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.profile-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-icon img {
+    height: 30px;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.profile-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 0.9em; /* Adjust font size for better mobile readability */
+}
+
+.profile-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.text-container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    line-height: 1.2; /* Improve text spacing */
+}
+
+.text-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.join-now {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(to right, blue, violet);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em; /* Adjust font size for better mobile readability */
+}
+
+.join-now:hover {
+    background: linear-gradient(to right, darkblue, darkviolet);
+}
+
+.faqs, .about-us {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+.faqs h2, .about-us h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em; /* Adjust font size for better mobile readability */
+}
+
+.faqs p, .about-us p {
+    font-size: 1em; /* Adjust font size for better mobile readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+
+    .text-container {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    .text-container h1 {
+        font-size: 2.5em; /* Adjust font size for smaller screens */
+    }
+
+    .text-container p {
+        font-size: 1.1em; /* Adjust font size for smaller screens */
+    }
+
+    .join-now {
+        padding: 12px 25px; /* Adjust padding for smaller screens */
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+
+    .faqs, .about-us {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    .faqs h2, .about-us h2 {
+        font-size: 1.6em; /* Adjust font size for smaller screens */
+    }
+
+    .faqs p, .about-us p {
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container h1 {
+        font-size: 2em; /* Further reduce font size for very small screens */
+    }
+}
