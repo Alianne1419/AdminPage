@@ -28,6 +28,13 @@
   display: flex;
   width: 100%;
   align-items: center;
+  padding-left: 10px; 
+}
+
+.sidebar-logo {
+  max-height: 50px; 
+  max-width: 100%; 
+  object-fit: contain; 
 }
 
 .sidebar .logo .logo-name {
@@ -258,3 +265,4 @@
     height: 100%;
     overflow: auto;
     background
+}
